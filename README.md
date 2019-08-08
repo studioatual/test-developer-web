@@ -4,7 +4,7 @@
 
 - <b>Renomear o arquivo .env-example para .env</b>
 - <b>Checar a conexão com o banco de dados.</b>
-- <b>Usuario: postgres</b>
+- <b>Username: postgres</b>
 - <b>Password: docker</b>
 
 ### Rodar o docker compose
