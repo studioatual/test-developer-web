@@ -1,0 +1,258 @@
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 7px 15px;
+  font-size: $fontSize;
+  color: $textColor;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  &-sm {
+    padding: 0 5px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  &-lg {
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: normal;
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+
+  &-margin {
+    margin: 0 2px;
+  }
+
+  &-slim {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  &.default {
+    color: $textColor;
+    background: $default;
+    border: 1px solid $borderColor;
+
+    &:hover {
+      background: $lightdefault;
+    }
+
+    &:active {
+      background: $darkdefault;
+    }
+  }
+
+  &.blue {
+    color: #ffffff;
+    background: $blue;
+
+    &:hover {
+      background: $lightblue;
+    }
+
+    &:active {
+      background: $darkblue;
+    }
+  }
+
+  &.red {
+    color: #ffffff;
+    background: $red;
+
+    &:hover {
+      background: $lightred;
+    }
+
+    &:active {
+      background: $darkred;
+    }
+  }
+
+  &.gray {
+    color: #ffffff;
+    background: $gray;
+
+    &:hover {
+      background: $lightgray;
+    }
+
+    &:active {
+      background: $darkgray;
+    }
+  }
+
+  &.green {
+    color: #ffffff;
+    background: $green;
+
+    &:hover {
+      background: $lightgreen;
+    }
+
+    &:active {
+      background: $darkgreen;
+    }
+  }
+
+  &.orange {
+    color: #ffffff;
+    background: $orange;
+
+    &:hover {
+      background: $lightorange;
+    }
+
+    &:active {
+      background: $darkorange;
+    }
+  }
+
+  &.purple {
+    color: #ffffff;
+    background: $purple;
+
+    &:hover {
+      background: $lightpurple;
+    }
+
+    &:active {
+      background: $darkpurple;
+    }
+  }
+
+  &.black {
+    color: #ffffff;
+    background: $black;
+
+    &:hover {
+      background: $lightblack;
+    }
+
+    &:active {
+      background: $darkblack;
+    }
+  }
+
+  &-icon {
+    padding: 0;
+    font-size: 16px;
+    line-height: normal;
+
+    &.blue {
+      color: $blue;
+      background: transparent;
+
+      &:hover {
+        color: $lightblue;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkblue;
+        background: transparent;
+      }
+    }
+
+    &.red {
+      color: $red;
+      background: transparent;
+
+      &:hover {
+        color: $lightred;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkred;
+        background: transparent;
+      }
+    }
+
+    &.gray {
+      color: $gray;
+      background: transparent;
+
+      &:hover {
+        color: $lightgray;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkgray;
+        background: transparent;
+      }
+    }
+
+    &.green {
+      color: $green;
+      background: transparent;
+
+      &:hover {
+        color: $lightgreen;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkgreen;
+        background: transparent;
+      }
+    }
+
+    &.orange {
+      color: $orange;
+      background: transparent;
+
+      &:hover {
+        color: $lightorange;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkorange;
+        background: transparent;
+      }
+    }
+
+    &.purple {
+      color: $purple;
+      background: transparent;
+
+      &:hover {
+        color: $lightpurple;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkpurple;
+        background: transparent;
+      }
+    }
+
+    &.black {
+      color: $black;
+      background: transparent;
+
+      &:hover {
+        color: $lightblack;
+        background: transparent;
+      }
+
+      &:active {
+        color: $darkblack;
+        background: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: none;
+
+  th,
+  td {
+    vertical-align: top;
+    border-top: 1px solid $borderColor;
+  }
+  th {
+    padding: 10px;
+    font-size: 14px;
+
+    &.nopad {
+      padding: 10px 0;
+    }
+
+    .title {
+      display: inline-block;
+      cursor: pointer;
+
+      &-red {
+        color: $red;
+      }
+
+      i {
+        display: inline-block;
+        margin-left: 5px;
+        font-size: 11px;
+        line-height: 16px;
+        vertical-align: top;
+      }
+    }
+  }
+  td {
+    padding: 6px 7px;
+    line-height: 16px;
+    color: $blue;
+    vertical-align: middle;
+
+    &.nopad {
+      padding: 6px 0;
+    }
+
+    &.noallpad {
+      padding: 0;
+    }
+
+    &.disabled {
+      color: $red;
+      background: rgba(255, 0, 0, 0.05);
+    }
+
+    .handler {
+      display: inline-block;
+      color: $textColor;
+      opacity: 0.5;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .input-control {
+      width: 100%;
+      padding: 5px 7px;
+      line-height: 100%;
+      font-size: 14px;
+      color: $blue;
+      text-align: center;
+      border: 0;
+      outline: none;
+    }
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid $borderColor;
+  }
+
+  tbody + tbody {
+    border-top: 2px solid $borderColor;
+  }
+
+  .table {
+    background-color: none;
+  }
+}
+
+.table-bordered {
+  border: 1px solid $borderColor;
+
+  th,
+  td {
+    border: 1px solid $borderColor;
+  }
+
+  thead {
+    th,
+    td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+.table-borderless {
+  th,
+  td,
+  thead th,
+  tbody + tbody {
+    border: 0;
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(#{odd}) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      background-color: rgba(28, 124, 213, 0.05);
+    }
+  }
+}

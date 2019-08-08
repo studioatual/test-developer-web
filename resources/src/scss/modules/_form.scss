@@ -1,0 +1,192 @@
+.form {
+  width: 100%;
+
+  textarea {
+    min-height: 150px;
+
+    &.seo {
+      min-height: 80px;
+    }
+  }
+
+  &-control {
+    margin: 0;
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: $blue;
+    border-radius: 5px;
+    border: 1px solid $borderColor;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+
+    &.inline {
+      float: left;
+      width: calc(100% - 40px);
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  &-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      padding-left: 5px;
+      font-weight: 600;
+    }
+
+    .vdatetime-input {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: $blue;
+      border-radius: 5px;
+      border: 1px solid $borderColor;
+      outline: none;
+    }
+
+    .btnfolder {
+      float: left;
+      display: inline-block;
+      padding: 10px 0;
+      width: 40px;
+      font-size: 14px;
+      color: #666;
+      background: $borderColor;
+      outline: none;
+      border-radius: 0 5px 5px 0;
+      border-left: none;
+      border-top: 1px solid $borderColor;
+      border-right: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+        background: #666;
+      }
+    }
+  }
+
+  &-link {
+    color: $blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $lightblue;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $darkblue;
+    }
+  }
+
+  &-text {
+    margin: 0 0 15px 0;
+    font-size: 12px;
+    color: $blue;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  &-error {
+    label {
+      color: $red;
+    }
+
+    .form-control {
+      border: 1px solid $red;
+    }
+
+    span {
+        display: block;
+        margin: 5px;
+        font-size: 11px;
+        color: $red;
+    }
+
+    .vdatetime-input {
+      border: 1px solid $red;
+    }
+
+    .vdatetime {
+      span {
+        margin: auto;
+        line-height: 36px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        color: $textColor !important;
+      }
+    }
+  }
+
+  &-check {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+      display: none;
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      border-radius: 4px;
+      background-color: #dddddd;
+
+      &:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 6px;
+        top: 5px;
+        width: 3px;
+        height: 5px;
+        border: solid white;
+        border-width: 0 4px 4px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+    &:hover {
+      color: #2196F3;
+      input ~ .checkmark {
+        background-color: #ccc;
+      }
+    }
+
+    input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+  }
+}

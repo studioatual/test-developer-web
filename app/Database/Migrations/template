@@ -1,0 +1,19 @@
+<?php
+
+use $useClassName;
+
+class $className extends AbstractMigration
+{
+    public function up()
+    {
+        $clients = $this->table('table_name');
+        $clients->addColumn('created_at', 'datetime', ['null' => false])
+                ->addColumn('updated_at', 'datetime', ['null' => false])
+                ->create();
+    }
+
+    public function down()
+    {
+        $this->table('table_name')->drop()->save();
+    }
+}

@@ -1,0 +1,44 @@
+Implemente um sistema web usando HTML, CSS e JavaScript para o frontend, PHP para o backend, MySQL (ou PostgreSQL), com PDO para comunicação com o Banco de Dados, para:
+
+1 -  Um cadastro de cliente com Nome, Nascimento, CPF, Celular, E-mail, Endereço e Observação (textarea); Máscaras nos campos é um diferencial.
+
+	- Validações:
+	0) Todos os campos são obrigatórios, exceto observação. (validar antes de tudo)
+	1) Nome: Não permitir caracteres especiais (somente letras com ou sem acento).
+	2) Nascimento: Validar datas impossíveis (ex.: 32/13/123). Não precisa validar meses com 28, 30, 31 dias.
+	3) CPF: Detectar cpf inválido (pode pegar uma função pronta da internet).
+	4) Celular: Verificar se possui o dígito 9 no começo. formato: (XX) 9XXXX-XXXX
+	5) E-mail: Verificar se possui somente um @, com texto antes e depois.
+	6) Observação: Máximo de 300 caracteres.
+	*) Implementar outras validações é um diferencial.
+
+2 -  Uma listagem de clientes com possibilidade de edição e exclusão de registros;
+	- A listagem deverá ter um filtro textual que efetua a busca em todos os campos por substring case-insensitive;
+	- A lista deve possuir sempre 10 registros e ser paginada.
+
+Considerações finais:
+- Todas as ações da tela de cadastro devem ser feitas exclusivamente por AJAX (não submeter o formulário nem recarregar a página).
+- Não utilizar PHP para manipular o frontend e não realizar renderização de interface no backend.
+- Realizar as operações utilizando somente PDO e SQL. Não utilizar models e abstrações das entidades do banco de dados (ex.: Laravel\Eloquent).
+- Comentários no código não são obrigatórios porém ajudam a validar o seu conhecimento sobre o assunto.
+- Utilizar alguma das seguintes tecnologias será considerado um diferencial: Docker, Vue, Vuetify, ReactJS, Laravel/Lumen
+
+
+- Opcional: Criar um README com instruções de setup do sistema para podermos executá-lo e avaliar o resultado
+	Exemplo:
+		1) Criar o arquivo de ambiente .env com base no arquivo .env.example
+		2) Executar docker-compose up
+		3) Acessar o container
+		4) Acessar pasta XYZ
+		5) Executar composer install
+		6) Executar php artisan XXX
+		7) Executar npm install
+		8) Acessar sistema pela url http://localhost:1234
+		
+
+Ao final da prova zip todo o material criado e encaminha para nós no email rh@newm.com.br junto da sua pretenção salarial.
+
+
+*** IMPORTANTE: Caso você não consiga fazer uma parte da prova ou se sinta incapaz de entregar algo, mesmo assim fale conosco. O prazo de 24 horas é apenas para ser justo com todos os candidatos. Nos envio o que você conseguir fazer, não importa o que seja. Vamos analisar e você pode ser contratado mesmo não tendo concluído a prova.
+
+Lembre-se que o prazo é 24 horas.

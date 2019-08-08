@@ -1,0 +1,60 @@
+.pages {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+  &-title {
+    display: table;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid rgba(96, 161, 252, 0.1);
+    h1 {
+      margin: 0;
+      padding: 0;
+      float: left;
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 28px;
+
+      .datetime {
+        float: right;
+        margin-left: 10px;
+        font-size: 14px;
+        color: $red;
+      }
+    }
+
+    &-btn {
+      float: right;
+    }
+  }
+
+  &-body {
+    padding: 20px;
+
+    .select-item {
+      margin-bottom: 15px;
+
+      label {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      select {
+        display: inline-block;
+        margin-left: 5px;
+        padding: 5px 10px 5px 7px;
+        font-size: 14px;
+        color: $blue;
+        border-radius: 5px;
+        border: 1px solid $borderColor;
+        outline: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

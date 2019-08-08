@@ -1,0 +1,41 @@
+version: "3"
+services:
+  php:
+    build: .docker/php
+    container_name: "php-srv"
+    image: php-docker
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "9000:9000"
+    restart: always
+    networks:
+      - mynetwork
+
+  nginx:
+    image: nginx
+    container_name: "nginx-srv"
+    volumes:
+      - .docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - .:/var/www/html
+    ports:
+      - "1234:80"
+    restart: always
+    networks:
+      - mynetwork
+
+  postgres:
+    image: postgres:latest
+    container_name: "postgres-srv"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "docker"
+      POSTGRES_DB: "website"
+    restart: always
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
